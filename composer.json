@@ -1,0 +1,49 @@
+{
+    "name": "thunderkiss52/laravel-inertia-kit",
+    "description": "Inertia Components kit",
+    "require": {
+        "php": ">=8.2",
+        "spatie/laravel-model-info": "^2.0",
+        "laravel/framework": "^11.0",
+        "spatie/laravel-data": "^4.8",
+        "spatie/laravel-package-tools": "^1.16",
+        "spatie/laravel-navigation": "^1.3",
+        "Thunderkiss52/laravel-documents": "dev-main",
+        "inertiajs/inertia-laravel": "^2.0",
+        "spatie/laravel-medialibrary": "^11.12",
+        "spatie/laravel-collection-macros": "^7.14",
+        "spatie/laravel-query-builder": "^6.3"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://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@github.com/Thunderkiss52/laravel-documents.git"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Thunderkiss52\\LaravelInertiaKit\\InertiaKitProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Thunderkiss52\\LaravelInertiaKit\\": "src/"
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse",
+        "baseline": "vendor/bin/phpstan analyse --generate-baseline",
+        "test": "vendor/bin/pest"
+    },
+    "authors": [
+        {
+            "name": "Thunderkiss52",
+            "email": "Thunderkiss52@gmail.com"
+        }
+    ]
+}
