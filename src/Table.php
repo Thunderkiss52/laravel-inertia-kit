@@ -10,7 +10,7 @@ use App\Filters\RequestFilter;
 use Illuminate\Support\Collection;
 use Spatie\Navigation\Navigation;
 use Spatie\QueryBuilder\QueryBuilder;
-use Thunderkiss52\LaravelDocuments\DocumentFactory;
+use App\Services\LaravelDocuments\DocumentFactory;
 
 class Table
 {
